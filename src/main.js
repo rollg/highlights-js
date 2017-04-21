@@ -46,3 +46,23 @@ var instance3 = Singleton.getInstance();
 instance2.increase();
 instance3.increase();
 console.log(instance1.get()); // 2
+
+/*
+* Observer pattern
+* */
+var subject = new Subject();
+
+var observer0 = new Observer();
+var observer1 = new Observer();
+var observer2 = new Observer();
+var observer3 = new Observer();
+var observer4 = new Observer();
+
+subject.subscribeObserver(observer0);
+subject.subscribeObserver(observer1);
+subject.subscribeObserver(observer2);
+subject.subscribeObserver(observer3);
+subject.subscribeObserver(observer4);
+
+subject.notifyAllObservers();
+subject.notifyObserver(observer2);
