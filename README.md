@@ -2,3 +2,6 @@
 experience different aspects of the language
 
 * abstract-class pattern;
+
+TODO:
+* tests

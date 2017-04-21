@@ -36,3 +36,13 @@ console.log(houseOfCards1.distributor);
 console.log(houseOfCards2.distributor);
 houseOfCards2.play();
 houseOfCards2.stop();
+
+/*
+ * Singleton
+ * */
+var instance1 = Singleton.getInstance();
+var instance2 = Singleton.getInstance();
+var instance3 = Singleton.getInstance();
+instance2.increase();
+instance3.increase();
+console.log(instance1.get()); // 2
